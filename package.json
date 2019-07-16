@@ -2,7 +2,7 @@
   "name": "coderarcade",
   "version": "1.0.0",
   "description": "A coding-themed arcade to familiarize up-and-coming coders with today's terms and technologies. A Single Page Application with a roadmap of games to play during your journey towards becoming a coder.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
