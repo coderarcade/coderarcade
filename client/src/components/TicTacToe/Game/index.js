@@ -1,5 +1,4 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import './index.css';
 
 function Square(props) {
@@ -66,7 +65,7 @@ export default class TicTacToe extends React.Component {
         if (calculateWinner(squares) || squares[i]) {
             return;
         }
-        squares[i] = this.state.xIsNext ? 'X' : 'O';
+        squares[i] = this.state.xIsNext ? '1' : '0';
         this.setState({
             history: history.concat([{
                 squares: squares,
@@ -103,7 +102,7 @@ export default class TicTacToe extends React.Component {
         if (winner) {
             status = 'Winner: ' + winner;
         } else {
-            status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+            status = 'Next player: ' + (this.state.xIsNext ? '1' : '0');
         }
         return (
             <div className="game">
