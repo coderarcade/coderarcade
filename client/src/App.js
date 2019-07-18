@@ -19,6 +19,7 @@ function App() {
         <LogoSweeperDialog />
         <RecursiveSnakeDialog />
       </Container>
+      <Footer />
     </div>
   );
 }
