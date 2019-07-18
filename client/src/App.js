@@ -1,6 +1,6 @@
 import React from 'react';
 // import TicTacToe from './components/TicTacToe';
-import FullScreenDialog from "./components/TicTacToe/FullScreenDialog"
+import TicTacToeDialog from "./components/TicTacToe/TicTacToeDialog"
 import LogoSweeperDialog from "./components/LogoSweeper/LogoSweeperDialog"
 import RecursiveSnakeDialog from "./components/RecursiveSnake/RecursiveSnakeDialog"
 import Container from "@material-ui/core/Container"
@@ -15,7 +15,7 @@ function App() {
       <div className="twinkling"></div>
       <div className="clouds"></div>
       <Container maxWidth="sm">
-        <FullScreenDialog />
+        <TicTacToeDialog />
         <LogoSweeperDialog />
         <RecursiveSnakeDialog />
       </Container>
