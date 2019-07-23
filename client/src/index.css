@@ -5,6 +5,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.brand-logo{
+  float: left;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 20px;
+  padding: 10px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+ .container{
+  text-emphasis: center;
+  padding: 5px;
+  margin: 5px;
+} 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
@@ -25,6 +54,7 @@ code {
 }
 
 h2 {
+h2{
   margin-top: 30px;
   text-align: center;
 }
