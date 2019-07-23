@@ -16,9 +16,11 @@
     "react-modal": "^3.9.1",
     "react-retro-hit-counter": "^1.0.1",
     "react-scripts": "3.0.1",
+    "react-sticky-footer": "0.1.0-rc3",
     "react95": "^2.0.0",
     "socket.io-client": "^2.2.0",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "typeface-roboto": "0.0.75"
   },
   "scripts": {
     "start": "react-scripts start",
