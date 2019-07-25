@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import TicTacToe from './components/TicTacToe';
 import TicTacToeDialog from "./components/TicTacToe/TicTacToeDialog"
 import LogoSweeperDialog from "./components/LogoSweeper/LogoSweeperDialog"
 import RecursiveSnakeDialog from "./components/RecursiveSnake/RecursiveSnakeDialog"
@@ -9,9 +8,10 @@ import Chat from "./components/Chat";
 import Navbar from './components/Navbar/Navbar';
 import Icon from '@material-ui/core/Icon';
 import SimpleBottomNavigation from './components/SimpleBottomNavigation/SimpleBottomNavigation';
-// import Album from "./components/Album/Album";
 import AutoGrid from './components/AutoGrid/AutoGrid';
 import 'typeface-roboto';
+import Grid from '@material-ui/core/Grid';
+import SVG from './components/Svg/Svg';
 
 class App extends Component {
 
@@ -26,13 +26,31 @@ class App extends Component {
          account_circle
         </Icon>
         <Navbar />
+        <SVG/>      
         <Container maxWidth="sm">
-          <TicTacToeDialog />
-          <LogoSweeperDialog />
-          <RecursiveSnakeDialog />
-        </Container>
-        <Chat />
+        <Grid container spacing={3}>
+        <Grid item xs>
+
+            <TicTacToeDialog /> 
+    
+        </Grid>
+        <Grid item xs>
+      
+            <LogoSweeperDialog />
+    
+        </Grid>
+        <Grid item xs>
+      
+            <RecursiveSnakeDialog />
+       
+        </Grid>
+      </Grid>
+          </Container>
+  
+            <Chat />
+    
         <AutoGrid />
+
         <SimpleBottomNavigation />
       </div>
     );
