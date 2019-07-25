@@ -37,6 +37,7 @@ class Chat extends React.Component {
         return (
             <div className="container">
                 <div className="row">
+                    <div className="col-8"></div>
                     <div className="col-4">
                         <div className="card" style={{background: 'linear-gradient(45deg, #C0722C 30%, #F41B25 90%)'}}>
                             <div className="card-body">
