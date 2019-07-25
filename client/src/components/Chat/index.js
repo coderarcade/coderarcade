@@ -2,12 +2,12 @@ import React from "react";
 import io from "socket.io-client";
 
 
-var HOST = "ws://coder-arcade.herokuapp.com/:3001"
-var ws = new WebSocket(HOST);
-var el = document.getElementById('server-time');
-ws.onmessage = function (event) {
-  el.innerHTML = 'Server time: ' + event.data;
-};
+// var HOST = "ws://coder-arcade.herokuapp.com/:3001"
+// var ws = new WebSocket(HOST);
+// var el = document.getElementById('server-time');
+// ws.onmessage = function (event) {
+//   el.innerHTML = 'Server time: ' + event.data;
+// };
 
 class Chat extends React.Component {
     constructor(props) {
