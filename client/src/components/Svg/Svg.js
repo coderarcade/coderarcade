@@ -1,6 +1,12 @@
-<div class="centered"><div class="neon">The Coder Aracde</div></div>
+import React from 'react';
 
-<svg >
+function SVG() {
+	return(
+
+    <div class="svglogo">
+    <div class="centered"><div class="neon">The Coder Aracde</div></div>
+
+<svg>
 <defs>
   
    <filter id="stroke">
@@ -21,19 +27,19 @@ in="outside" result="thickened" />
 </filter>
   
   <filter id="outer-glow" >
-		<!-- Thicken out the original shape -->
+  
 		<feMorphology operator="dilate" radius="2" in="SourceAlpha" result="thicken" />
 
-		<!-- Use a gaussian blur to create the soft blurriness of the glow -->
+	
 		<feGaussianBlur in="thicken" stdDeviation="5" result="blurred" />
 
-		<!-- Change the colour -->
+
 		<feFlood  flood-color="#db0273" result="glowColor" />
 
-		<!-- Color in the glows -->
+
 		<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
 
-		<!--	Layer the effects together -->
+	
 		<feMerge>
 			<feMergeNode in="softGlow_colored"/>
 			<feMergeNode in="SourceGraphic"/>
@@ -42,19 +48,19 @@ in="outside" result="thickened" />
 	</filter>
   
   <filter id="outer-glow1" >
-		<!-- Thicken out the original shape -->
+	
 		<feMorphology operator="dilate" radius="20" in="SourceAlpha" result="thicken" />
 
-		<!-- Use a gaussian blur to create the soft blurriness of the glow -->
+	
 		<feGaussianBlur in="thicken" stdDeviation="25" result="blurred" />
 
-		<!-- Change the colour -->
-		<feFlood  flood-color="#530139" result="glowColor" />
+	
+		<feFlood  flood-color="#C0722C" result="glowColor" />
 
-		<!-- Color in the glows -->
+	
 		<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
 
-		<!--	Layer the effects together -->
+		
 		<feMerge>
 			<feMergeNode in="softGlow_colored"/>
 			<feMergeNode in="SourceGraphic"/>
@@ -65,3 +71,7 @@ in="outside" result="thickened" />
   
   
 </svg>
+</div>
+)
+  };
+export default SVG;

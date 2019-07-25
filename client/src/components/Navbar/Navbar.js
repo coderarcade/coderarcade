@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.png';
+// import logo from './logo.png';
 
 function Navbar(props) {
 	return(
@@ -9,7 +9,7 @@ function Navbar(props) {
 				{/* refresh the page when clicked */}
 				
 				
-				<a className='brand-logo center' href="/" ><img style={{width:"100px", opacity: "30%", backgroundColor:"#ffffff"}} className="image" src={logo} alt="logo"/></a>
+				{/* <a className='brand-logo center' href="/" ><img style={{width:"100px", opacity: "30%", backgroundColor:"#ffffff"}} className="image" src={logo} alt="logo"/></a> */}
 			</div>
 		</nav>
 	</div>
