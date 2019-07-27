@@ -5,8 +5,7 @@ import RecursiveSnakeDialog from "./components/RecursiveSnake/RecursiveSnakeDial
 import Container from "@material-ui/core/Container"
 import './App.css';
 import Chat from "./components/Chat";
-import Navbar from './components/Navbar/Navbar';
-import Icon from '@material-ui/core/Icon';
+// import Icon from '@material-ui/core/Icon';
 import SimpleBottomNavigation from './components/SimpleBottomNavigation/SimpleBottomNavigation';
 import AutoGrid from './components/AutoGrid/AutoGrid';
 import 'typeface-roboto';
@@ -22,35 +21,25 @@ class App extends Component {
         <div className="stars"></div>
         <div className="twinkling"></div>
         <div className="clouds"></div>
-        <Icon style={{color:"white", float:"right", fontSize:"80"}}>
+        {/* <Icon style={{color:"white", float:"right", fontSize:"80"}}>
          account_circle
-        </Icon>
-        <Navbar />
+        </Icon> */}
         <SVG/>      
         <Container maxWidth="sm">
         <Grid container spacing={3}>
         <Grid item xs>
-
             <TicTacToeDialog /> 
-    
         </Grid>
         <Grid item xs>
-      
             <LogoSweeperDialog />
-    
         </Grid>
         <Grid item xs>
-      
             <RecursiveSnakeDialog />
-       
-        </Grid>
-      </Grid>
+         </Grid>
+         </Grid>
           </Container>
-  
             <Chat />
-    
         <AutoGrid />
-
         <SimpleBottomNavigation />
       </div>
     );

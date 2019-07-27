@@ -4,7 +4,7 @@ function SVG() {
 	return(
 
     <div class="svglogo">
-    <div class="centered"><div class="neon">The Coder Aracde</div></div>
+    <div class="centered"><div class="neon">Coder Aracade</div></div>
 
 <svg>
 <defs>
