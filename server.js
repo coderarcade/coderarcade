@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const dotenv = require('dotenv');
+dotenv.config();
 
 const mongoose = require("mongoose");
 const routes = require("./routes");
@@ -7,7 +9,8 @@ const routes = require("./routes");
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3001;
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -21,6 +24,10 @@ app.use(routes);
 
 // Connect to the Mongo DB
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/coderarcade", { useNewUrlParser: true });
+
+app.get('/', function(req, res) {
+  res.send('hello world')
+});
 
 // Start the API server
 server = http.listen(PORT, function () {

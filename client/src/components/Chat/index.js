@@ -2,6 +2,15 @@ import React from "react";
 import io from "socket.io-client";
 import './index.css';
 
+
+// var HOST = window.location.hostname
+
+// var ws = new WebSocket(HOST);
+// var el = document.getElementById('server-time');
+// ws.onmessage = function (event) {
+//   el.innerHTML = 'Server time: ' + event.data;
+// };
+
 class Chat extends React.Component {
     constructor(props) {
         super(props);
@@ -12,7 +21,7 @@ class Chat extends React.Component {
             messages: []
         };
 
-        this.socket = io('localhost:3001');
+        this.socket = io('http://18.221.235.192/');
 
         this.socket.on('RECEIVE_MESSAGE', function (data) {
             addMessage(data);
