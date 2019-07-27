@@ -2,7 +2,8 @@ import React from "react";
 import io from "socket.io-client";
 
 
-// var HOST = "ws://coder-arcade.herokuapp.com/:3001"
+// var HOST = window.location.hostname
+
 // var ws = new WebSocket(HOST);
 // var el = document.getElementById('server-time');
 // ws.onmessage = function (event) {
@@ -19,9 +20,7 @@ class Chat extends React.Component {
             messages: []
         };
 
-
-        
-        this.socket = io('localhost:3001') || io('https://coder-arcade.herokuapp.com/:3001')
+        this.socket = io('http://18.221.235.192/');
 
         this.socket.on('RECEIVE_MESSAGE', function (data) {
             addMessage(data);
