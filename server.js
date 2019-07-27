@@ -23,9 +23,9 @@ app.use(routes);
 // Connect to the Mongo DB
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/coderarcade", { useNewUrlParser: true });
 
-app.get('/', function(req, res) {
-  res.send('hello world')
-});
+// app.get('/', function(req, res) {
+//   res.send('hello world')
+// });
 
 // Start the API server
 server = http.listen(PORT, function () {
