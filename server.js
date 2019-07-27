@@ -10,22 +10,22 @@ var io = require('socket.io')(http);
 const PORT = process.env.PORT || 3001;
 // const PORT = process.env.PORT || 3000;
 
-// Define middleware here
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
-// Add routes, both API and view
-app.use(routes);
+// // Define middleware here
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
+// // Serve up static assets (usually on heroku)
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
+// }
+// // Add routes, both API and view
+// app.use(routes);
 
 // Connect to the Mongo DB
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/coderarcade", { useNewUrlParser: true });
 
-// app.get('/', function(req, res) {
-//   res.send('hello world')
-// });
+app.get('/', function(req, res) {
+  res.send('hello world')
+});
 
 // Start the API server
 server = http.listen(PORT, function () {
