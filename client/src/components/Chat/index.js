@@ -22,7 +22,7 @@ class Chat extends React.Component {
         };
         console.log(HOST+':'+PORT);
         
-        this.socket = io('localhost:3000');
+        this.socket = io();
 
         // this.socket.on('error', function (err) {
         //     console.log('received socket error:')
