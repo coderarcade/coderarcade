@@ -23,7 +23,7 @@ export default function SimpleBottomNavigation() {
       onChange={(event, newValue) => {
         setValue(newValue);
       }}
-      showLabels
+     
       className={classes.root}
     >
      <h6 style={{paddingTop:"6px", color: "white"}}>© 2019 The node_modules </h6>

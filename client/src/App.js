@@ -17,10 +17,9 @@ class App extends Component {
   render() {
 
     return (
-      <div>
-        <div className="stars"></div>
-        <div className="twinkling"></div>
-        <div className="clouds"></div>
+        <div className="stars">
+        <div className="twinkling">
+        <div className="clouds">
         {/* <Icon style={{color:"white", float:"right", fontSize:"80"}}>
          account_circle
         </Icon> */}
@@ -42,6 +41,9 @@ class App extends Component {
         <AutoGrid />
         <SimpleBottomNavigation />
       </div>
+      </div>
+      </div>
+     
     );
   };
 };

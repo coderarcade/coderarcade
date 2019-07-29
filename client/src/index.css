@@ -10,24 +10,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 10px;
-  font: 14px "Century Gothic", Futura, sans-serif;
+  font-size: 14px;
   margin: 20px;
-  height: 100vh;
-  font-family: sans-serif;
+  font-family: "Century Gothic", Futura, sans-serif;
 }
-/* 
-html,
-body {
-  height: 100vh;
-  font-family: sans-serif;
-} */
+
+html, body {
+  background-color: #000;
+}
 
 #root {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  flex-wrap: wrap;
-  height: 100%;
 }
 
  .container{
@@ -126,10 +120,7 @@ header {
  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
-  height: 100%;
   display: block; 
 }
 
