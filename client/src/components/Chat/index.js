@@ -1,6 +1,5 @@
 import React from "react";
 import io from "socket.io-client";
-import './index.css';
 
 
 // var HOST = window.location.hostname

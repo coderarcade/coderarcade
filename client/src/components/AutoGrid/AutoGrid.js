@@ -55,8 +55,8 @@ export default function AutoGrid() {
       <Avatar alt="jquery" src="https://cdn.iconscout.com/icon/free/png-256/jquery-10-1175155.png" className={classes.bigAvatar} />
       <Avatar alt="node" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfWvcydc6q355c0sUW47uMF0s3JugZgKQQzildOyHW7AFJoQfc" className={classes.bigAvatar} />
       <Avatar alt="mongoose" src="https://cdn.iconscout.com/icon/free/png-256/mongodb-3-1175138.png" className={classes.bigAvatar} />
-      <Avatar alt="handlebars" src="https://raw.github.com/evereq/handlebars.js.nuget/master/images/handlebars.png" className={classes.bigAvatar} />
-      <Avatar alt="express" src="https://www.kylelim.com/images/express.png" className={classes.bigAvatar} />
+      {/* <Avatar alt="handlebars" src="https://raw.github.com/evereq/handlebars.js.nuget/master/images/handlebars.png" className={classes.bigAvatar} /> */}
+      {/* <Avatar alt="express" src="https://www.kylelim.com/images/express.png" className={classes.bigAvatar} /> */}
       <Avatar alt="firebase" src="https://www.appcoda.com/wp-content/uploads/2016/11/firebase_logo_shot.png" className={classes.bigAvatar} />
       <Avatar alt="react" src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png" className={classes.bigAvatar} />
       <Avatar alt="php" src="https://icon-library.net/images/php-icon-png/php-icon-png-0.jpg" className={classes.bigAvatar} />
