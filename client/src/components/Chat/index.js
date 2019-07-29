@@ -51,11 +51,11 @@ class Chat extends React.Component {
 
     render() {
         return (
-            <div className="container">
+            <div style={{paddingTop: "10px"}} className="container">
                 <div className="row">
                     <div className="col-8"></div>
                     <div className="col-4">
-                        <div className="card" style={{background: 'linear-gradient(45deg, #C0722C 30%, #F41B25 90%)'}}>
+                        <div className="card">
                             <div className="card-body">
                                 <div className="card-title">Global Chat</div>
                                 <hr />
@@ -72,7 +72,7 @@ class Chat extends React.Component {
                                 <br />
                                 <input type="text" placeholder="Message" value={this.state.message} onChange={ev => this.setState({ message: ev.target.value })} className="form-control" />
                                 <br />
-                                <button onClick={this.sendMessage} className="btn btn-primary form-control">Send</button>
+                                <button style={{backgroundColor:"blue"}} onClick={this.sendMessage} className="btn btn-primary form-control">Send</button>
                             </div>
                         </div>
                     </div>

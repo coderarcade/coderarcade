@@ -4,12 +4,12 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 
 const useStyles = makeStyles({
   root: {
-    width: "100%",
-    height: "5%",
-    position: "absolute",
+    position: "sticky",
+    maxWidth: "100%",
+    height: "30px",
     bottom: 0,
-    background: 'linear-gradient(45deg, black 30%, blue 90%)',
-    marginLeft: "-11px",
+    background: 'linear-gradient(45deg, black, #F41B25, black)',
+    fontFamily: 'italic',
   },
 });
 
@@ -26,7 +26,7 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
-     <h6 style={{paddingTop:"6px", color:"#F41B25"}}>© 2019 The node_modules </h6>
+     <h6 style={{paddingTop:"6px", color: "white"}}>© 2019 The node_modules </h6>
 
     </BottomNavigation>
   );
