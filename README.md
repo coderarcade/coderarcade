@@ -17,6 +17,8 @@ MERN Stack
 * Express
 * React
 * Material-UI
+* Socket.IO
+* AWS EC2
 
 ## Tic Tac 1/0
 
