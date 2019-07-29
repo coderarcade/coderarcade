@@ -2,7 +2,8 @@ import React from "react";
 import io from "socket.io-client";
 
 
-// var HOST = window.location.hostname
+var HOST = window.location.hostname
+var PORT = 3000
 
 // var ws = new WebSocket(HOST);
 // var el = document.getElementById('server-time');
@@ -19,8 +20,14 @@ class Chat extends React.Component {
             message: '',
             messages: []
         };
+        console.log(HOST+':'+PORT);
+        
+        this.socket = io('localhost:3000');
 
-        this.socket = io('http://18.221.235.192/');
+        // this.socket.on('error', function (err) {
+        //     console.log('received socket error:')
+        //     console.log(err)
+        //   })
 
         this.socket.on('RECEIVE_MESSAGE', function (data) {
             addMessage(data);
