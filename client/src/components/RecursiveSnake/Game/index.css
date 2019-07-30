@@ -1,9 +1,5 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    font-family: Helvetica, san-serif;
+body {
+    width: 80vw;
   }
   
   .grid {
