@@ -2,10 +2,6 @@ body {
     width: 80vw;
   }
   
-  html, body {
-    font-family: Helvetica, san-serif;
-  }
-  
   .grid {
     box-sizing: border-box;
     padding: 0;
