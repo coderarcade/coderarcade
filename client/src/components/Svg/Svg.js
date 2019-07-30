@@ -3,8 +3,8 @@ import React from 'react';
 function SVG() {
 	return(
 
-    <div className="svglogo">
-    <div className="centered"><div className="neon">Coder Aracade</div></div>
+    <div class="svglogo">
+    <div class="centered"><div class="neon">Coder Aracade</div></div>
 
 <svg>
 <defs>
@@ -19,7 +19,7 @@ in="outside" result="thickened" />
   </filter>
   
   <filter id="inner-glow" >
-    <feFlood floodColor="#e10b8d"/>
+    <feFlood flood-color="#e10b8d"/>
     <feComposite in2="SourceAlpha" operator="out"/>
     <feGaussianBlur stdDeviation="0.5" result="blur"/>
     <feComposite operator="atop" in2="SourceGraphic"/>
@@ -34,7 +34,7 @@ in="outside" result="thickened" />
 		<feGaussianBlur in="thicken" stdDeviation="5" result="blurred" />
 
 
-		<feFlood  floodColor="#db0273" result="glowColor" />
+		<feFlood  flood-color="#db0273" result="glowColor" />
 
 
 		<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
@@ -55,7 +55,7 @@ in="outside" result="thickened" />
 		<feGaussianBlur in="thicken" stdDeviation="25" result="blurred" />
 
 	
-		<feFlood  floodColor="#C0722C" result="glowColor" />
+		<feFlood  flood-color="#C0722C" result="glowColor" />
 
 	
 		<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />

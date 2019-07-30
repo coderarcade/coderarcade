@@ -2,177 +2,68 @@ body {
     width: 80vw;
   }
   
-  h1,h2,h3,h4,h5,h6 {
-    margin:0;
-    padding:0;
-    display: inline-block;
-  }
-  
-  .game {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-  }
-  
-  .info {
-    display: inline-block;
-  }
-  
-  .info div {
-    display: inline-block;
-  }
-  
-  .show-grid {
-    padding: 2px;
-  }
-  
-  .score {
-    padding: 2px;
-  }
-  
-  .timer {
-    width: 140px;
-    padding:2px;
-    margin-top: 5px;
-    background-color: #8e44ad;
-    display:flex;
-    color: white;
-  }
-  .timer span {
-    padding: 4px;
-  }
-  
-  
-  .grid {
-    display: flex;  
-    justify-content:center;
-    align-items: center;
+  html, body {
+    font-family: Helvetica, san-serif;
   }
   
   .grid {
-    width:500px;
-    height:500px;
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(20, 1fr);
-    grid-gap: 0;
-    background: black;
+    box-sizing: border-box;
+    padding: 0;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
   }
   
-  .control-panel {
-    margin-left: 10px;
+  .grid-cell {
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+  .grid-cell--food {
+    background-image: url('../Resources/i.png');
+    background-size: 100%;
+  }
+  .grid-cell--snake {
+    background-image: url('../Resources/plus.png');
+    background-size: 100%;
+  }
+  
+  .snake-app {
+    position: relative;
+    margin: 10px auto;
+  }
+  .snake-app:focus {
+    outline: none;
+  }
+  
+  .snake-app__overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
-  
-  .control-panel > button:last-child {
-    margin-top: 10px;
-    font-size: 1.2em;
-  }
-  
-  .left-right {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin:15px;
-  }
-  
-  .cell {
-    display: inline-block;
-  }
-  
-  .cell-border{
-    border: 1px solid #e74c3c;
-  }
-  
-  .food {
-    background: none;
-  }
-  
-  .food:after {
-    content: '🍎';
-    text-align: center;
-    display: block;
-  }
-  
-  .head {
-    background: none;
-    color: #e74c3c;
-    font-weight:800;
-    font-size: 2em;
-  }
-  
-  .tail, .food {
-  /*   font-size: 1em; */
-  }
-  
-  .head:after {
-    display: block;
-    text-align: center;
-  }
-  
-  .head-up:after {
-    display: block;
-    text-align: center;
-    content: '▲';
-  }
-  
-  .head-left:after {
-    display: block;
-    text-align: center;
-    content: '◀';
-  }
-  
-  .head-right:after {
-    display: block;
-    text-align: center;
-    content: '▶';
-  }
-  
-  .head-down:after {
-    display: block;
-    text-align: center;
-    content: '▼';
-  }
-  
-  
-  @keyframes anim-tail {
-    from {background-color: #e74c3c;}
-    to {background-color: yellow;}
-  }
-  
-  .tail {
-    background: #e74c3c;
-    border: 1px none blue;
-    animation-name: anim-tail;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-  
-  .tail:after {
-    display:block;
-    text-align: center;
-  }
-  
-  
-  
-  @keyframes anim-lost {
-    from {color: white;}
-    to {color: yellow;}
-  }
-  
-  .game-lost {
-    animation-name: anim-lost;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    padding: 2px;
-    border-radius: 5px;
     color: white;
-    font-size: 2em;
-    font-family: Noto Sans, sans-serif;
-    width: 200px;
+    font-size: 1.2rem;
   }
+  
+  .mb-1 {
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+    border: 2px solid blue;
+    padding: .75rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+  }
+  

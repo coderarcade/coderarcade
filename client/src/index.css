@@ -16,10 +16,19 @@ body {
 html {
   background-color: #000;
 }
+/* 
+html,
+body {
+  height: 100vh;
+  font-family: sans-serif;
+} */
 
 #root {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+  height: 100%;
 }
 
  .container{
