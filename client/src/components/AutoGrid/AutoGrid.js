@@ -35,7 +35,7 @@ export default function AutoGrid() {
     <div className={classes.root}>
        <React.Fragment>
       <CssBaseline />
-      <Container style={{width:"100%", padding:"5%"}} fixed>
+      <Container style={{width:"100%", padding:"5%"}} fluid>
       <Grid container spacing={3}>
         <Grid item xs>
           <Paper className={classes.paper}><h2 style={{textAlign:"center"}}>Meet The Creators</h2><Typography variant="body2">We geared our idea towards a coding-themed arcade application for beginners/students to familiarize up-and-coming coders with today's technology. Not only for beginners but experienced programmers as well that just want to play mini games while brushing up on what they might already know.
