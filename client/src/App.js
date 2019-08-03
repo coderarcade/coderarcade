@@ -5,6 +5,7 @@ import RecursiveSnakeDialog from "./components/RecursiveSnake/RecursiveSnakeDial
 import Container from "@material-ui/core/Container"
 import './App.css';
 import Chat from "./components/Chat";
+import Docs from "./components/Docs";
 // import Icon from '@material-ui/core/Icon';
 // import SimpleBottomNavigation from './components/SimpleBottomNavigation/SimpleBottomNavigation';
 // import AutoGrid from './components/AutoGrid/AutoGrid';
@@ -42,8 +43,22 @@ class App extends Component {
                     <RecursiveSnakeDialog />
                   </Grid>
                 </Grid>
+              {/* </Container> */}
+              <br></br>
+              {/* <Container maxWidth="sm"> */}
+                <Grid container spacing={3}>
+                  <Grid item xs>
+                    {/* <AboutUs /> */}
+                  </Grid>
+                  <Grid item lg>
+                    <Chat />
+                  </Grid>
+                  <Grid item lg>
+                    <Docs />
+                  </Grid>
+                </Grid>
               </Container>
-              <Chat />
+
               {/* <AutoGrid /> */}
               {/* <SimpleBottomNavigation /> */}
             </div>
