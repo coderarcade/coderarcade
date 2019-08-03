@@ -1,38 +1,36 @@
-body {
-    width: 80vw;
-  }
-  
   .grid {
-    box-sizing: border-box;
+    box-sizing: content-box;
     padding: 0;
     border-top: 1px solid lightgray;
     border-right: 1px solid lightgray;
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
   }
-  
+
   .grid-cell {
     border-left: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
   }
+
   .grid-cell--food {
     background-image: url('../Resources/i.png');
     background-size: 100%;
   }
+
   .grid-cell--snake {
     background-image: url('../Resources/plus.png');
     background-size: 100%;
   }
-  
+
   .snake-app {
     position: relative;
     margin: 10px auto;
   }
+
   .snake-app:focus {
     outline: none;
   }
-  
+
   .snake-app__overlay {
     position: absolute;
     left: 0;
@@ -47,11 +45,11 @@ body {
     color: white;
     font-size: 1.2rem;
   }
-  
+
   .mb-1 {
     margin-bottom: 1rem;
   }
-  
+
   button {
     background-color: blue;
     color: white;
@@ -62,4 +60,3 @@ body {
     cursor: pointer;
     box-shadow: 0 0 10px black;
   }
-  

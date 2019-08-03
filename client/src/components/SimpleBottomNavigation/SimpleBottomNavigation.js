@@ -23,10 +23,10 @@ export default function SimpleBottomNavigation() {
       onChange={(event, newValue) => {
         setValue(newValue);
       }}
-      showLabels
+      showlabel={value.toString()}
       className={classes.root}
     >
-     <h6 style={{paddingTop:"6px", color: "white"}}>© 2019 The node_modules </h6>
+      <h6 style={{ paddingTop: "6px", color: "white" }}>© 2019 The node_modules </h6>
 
     </BottomNavigation>
   );
