@@ -9,6 +9,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
 import MainControls from '../Game/MainControls.js'
 
+
 export default function ResponsiveDialog() {
   const [open, setOpen] = React.useState(false);
   const theme = useTheme();
@@ -19,8 +20,10 @@ export default function ResponsiveDialog() {
   }
 
   function handleClose() {
+    
     setOpen(false);
   }
+
 
   return (
     <div>

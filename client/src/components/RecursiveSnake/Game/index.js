@@ -96,6 +96,7 @@ export default class RecursiveSnake extends React.Component {
                 break;
             default:
                 break;
+
         }
         // now shift each "body" segment to the previous segment's position
         [].push.apply(
