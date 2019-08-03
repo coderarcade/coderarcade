@@ -11,11 +11,12 @@ import AutoGrid from './components/AutoGrid/AutoGrid';
 import 'typeface-roboto';
 import Grid from '@material-ui/core/Grid';
 import SVG from './components/Svg/Svg';
-import Amplify from 'aws-amplify';
-import awsconfig from './aws-exports';
-import { withAuthenticator } from 'aws-amplify-react'; // or 'aws-amplify-react-native';
+// import Amplify from 'aws-amplify';
+// import awsconfig from './aws-exports';
+// import { withAuthenticator } from 'aws-amplify-react'; 
 
-Amplify.configure(awsconfig);
+
+// Amplify.configure(awsconfig);
 
 class App extends Component {
 
@@ -28,9 +29,6 @@ class App extends Component {
         <div className="stars">
           <div className="twinkling">
             <div className="clouds">
-              {/* <Icon style={{color:"white", float:"right", fontSize:"80"}}>
-         account_circle
-        </Icon> */}
               <SVG />
               <Container maxWidth="sm">
                 <Grid container spacing={3}>
@@ -56,4 +54,5 @@ class App extends Component {
   };
 };
 
-export default withAuthenticator(App, true);
+// export default withAuthenticator(App, true);
+export default App;
