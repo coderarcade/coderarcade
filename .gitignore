@@ -25,7 +25,7 @@ yarn-debug.log*
 yarn-error.log*
 
 /.vscode
-/package-lock.json
+package-lock.json
 
 #amplify
 amplify/\#current-cloud-backend
