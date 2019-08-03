@@ -6,10 +6,16 @@ dotenv.config();
 const mongoose = require("mongoose");
 const routes = require("./routes");
 
-var http = require('http').createServer(app);
-var io = require('socket.io')(http);
+const http = require('http').createServer(app);
+const io = require('socket.io')(http);
 
-const PORT = process.env.PORT || 3000;
+let PORT;
+if (process.env.NODE_ENV === "production") {
+  PORT = 3000;
+} else {
+  PORT = 3001;
+}
+
 // const PORT = process.env.PORT || 3000;
 
 // Define middleware here
