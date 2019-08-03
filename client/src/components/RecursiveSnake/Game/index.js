@@ -75,9 +75,11 @@ export default class RecursiveSnake extends React.Component {
     }
 
     moveSnake() {
+        console.log(this.state.direction);
         const newSnake = [];
         // set in the new "head" of the snake
         switch (this.state.direction) {
+
             // down
             case 40:
                 newSnake[0] = [this.state.snake[0][0], this.state.snake[0][1] + 1];
@@ -98,6 +100,10 @@ export default class RecursiveSnake extends React.Component {
                 break;
 
         }
+        console.log(newSnake);
+
+        console.log("hi");
+        
         // now shift each "body" segment to the previous segment's position
         [].push.apply(
             newSnake,
@@ -105,10 +111,13 @@ export default class RecursiveSnake extends React.Component {
                 // since we're starting from the second item in the list,
                 // just use the index, which will refer to the previous item
                 // in the original list
+                console.log(this.state.snake[i]);
+                
                 return this.state.snake[i];
             })
         );
-
+            console.log(newSnake);
+            
         this.setState({ snake: newSnake });
 
         this.checkIfAteFood(newSnake);
