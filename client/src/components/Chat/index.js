@@ -1,5 +1,6 @@
 import React from "react";
 import io from "socket.io-client";
+import "./index.css";
 
 
 var HOST = window.location.hostname
@@ -55,13 +56,10 @@ class Chat extends React.Component {
 
     render() {
         return (
-            <div style={{ paddingTop: "10px" }} className="container">
-                {/* <div className="row">
-                    <div className="col-8"></div>
-                    <div className="col-4"> */}
-                        <div className="card">
+            <div style={{ paddingTop: "10px", width: "100%"}} className="container">
+                        <div style={{height: "355px", paddingBottom: "10%", marginTop: "2.5%"}} className="card">
                             <div className="card-body">
-                                <div className="card-title">Global Chat</div>
+                                <div className="card-title"><h3>Global Chat</h3></div>
                                 <hr />
                                 <div className="messages">
                                     {this.state.messages.map(message => {

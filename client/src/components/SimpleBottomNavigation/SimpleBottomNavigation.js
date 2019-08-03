@@ -5,11 +5,11 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 const useStyles = makeStyles({
   root: {
     position: "sticky",
-    maxWidth: "100%",
-    height: "30px",
+    height: "4%",
     bottom: 0,
     background: 'linear-gradient(45deg, black, #F41B25, black)',
     fontFamily: 'italic',
+    marginTop: "10%",
   },
 });
 

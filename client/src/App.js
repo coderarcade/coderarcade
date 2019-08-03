@@ -6,9 +6,9 @@ import Container from "@material-ui/core/Container"
 import './App.css';
 import Chat from "./components/Chat";
 import Docs from "./components/Docs";
+import AboutUs from "./components/AboutUs";
 // import Icon from '@material-ui/core/Icon';
-// import SimpleBottomNavigation from './components/SimpleBottomNavigation/SimpleBottomNavigation';
-// import AutoGrid from './components/AutoGrid/AutoGrid';
+import SimpleBottomNavigation from './components/SimpleBottomNavigation/SimpleBottomNavigation';
 import 'typeface-roboto';
 import Grid from '@material-ui/core/Grid';
 import SVG from './components/Svg/Svg';
@@ -24,7 +24,6 @@ class App extends Component {
   render() {
 
     // const { isAuthenticated } = this.props.auth;
-
     return (
       <div>
         <div className="stars">
@@ -43,24 +42,22 @@ class App extends Component {
                     <RecursiveSnakeDialog />
                   </Grid>
                 </Grid>
-              {/* </Container> */}
+              </Container>
               <br></br>
-              {/* <Container maxWidth="sm"> */}
+              <Container maxWidth="lg">
                 <Grid container spacing={3}>
                   <Grid item xs>
-                    {/* <AboutUs /> */}
+                    <AboutUs />
                   </Grid>
-                  <Grid item lg>
+                  <Grid item xs>
                     <Chat />
                   </Grid>
-                  <Grid item lg>
+                  <Grid item xs>
                     <Docs />
                   </Grid>
                 </Grid>
               </Container>
-
-              {/* <AutoGrid /> */}
-              {/* <SimpleBottomNavigation /> */}
+              <SimpleBottomNavigation/>
             </div>
           </div>
         </div>
