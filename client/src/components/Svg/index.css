@@ -1,0 +1,17 @@
+.svglogo {
+    margin-left: 25%;
+    padding-bottom: 5%;
+}
+
+.centered {
+    position: absolute;
+    text-align: center;
+}
+
+.neon {
+    font-family: 'Neon 80s';
+    font-size: 5rem;
+    color: #F41B25;
+    padding: 30px;
+    filter: url(#stroke) url(#inner-glow) url(#outer-glow) url(#outer-glow1);
+}

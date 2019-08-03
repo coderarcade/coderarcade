@@ -20,9 +20,13 @@ class Chat extends React.Component {
             message: '',
             messages: []
         };
-        console.log(HOST+':'+PORT);
-        
-        this.socket = io();
+        console.log(HOST + ':' + PORT);
+
+        if (process.env.NODE_ENV === "production") {
+            this.socket = io();
+        } else {
+            this.socket = io('http://localhost:3001');
+        }
 
         // this.socket.on('error', function (err) {
         //     console.log('received socket error:')
@@ -51,7 +55,7 @@ class Chat extends React.Component {
 
     render() {
         return (
-            <div style={{paddingTop: "10px"}} className="container">
+            <div style={{ paddingTop: "10px" }} className="container">
                 <div className="row">
                     <div className="col-8"></div>
                     <div className="col-4">
@@ -62,7 +66,7 @@ class Chat extends React.Component {
                                 <div className="messages">
                                     {this.state.messages.map(message => {
                                         return (
-                                            <div>{message.author}: {message.message}</div>
+                                            <div key={Math.random() * 1000}>{message.author}: {message.message}</div>
                                         )
                                     })}
                                 </div>
@@ -72,7 +76,7 @@ class Chat extends React.Component {
                                 <br />
                                 <input type="text" placeholder="Message" value={this.state.message} onChange={ev => this.setState({ message: ev.target.value })} className="form-control" />
                                 <br />
-                                <button style={{backgroundColor:"blue"}} onClick={this.sendMessage} className="btn btn-primary form-control">Send</button>
+                                <button style={{ backgroundColor: "blue" }} onClick={this.sendMessage} className="btn btn-primary form-control">Send</button>
                             </div>
                         </div>
                     </div>

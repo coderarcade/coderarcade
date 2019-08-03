@@ -1,10 +1,11 @@
 import React from 'react';
+import './index.css';
 
 function SVG() {
 	return (
 
-		<div class="svglogo">
-			<div class="centered"><div class="neon">Coder Arcade</div></div>
+		<div className="svglogo">
+			<div className="centered"><div className="neon">Coder Arcade</div></div>
 
 			<svg>
 				<defs>
@@ -19,7 +20,7 @@ function SVG() {
 					</filter>
 
 					<filter id="inner-glow" >
-						<feFlood flood-color="#e10b8d" />
+						<feFlood floodColor="#e10b8d" />
 						<feComposite in2="SourceAlpha" operator="out" />
 						<feGaussianBlur stdDeviation="0.5" result="blur" />
 						<feComposite operator="atop" in2="SourceGraphic" />
@@ -34,7 +35,7 @@ function SVG() {
 						<feGaussianBlur in="thicken" stdDeviation="5" result="blurred" />
 
 
-						<feFlood flood-color="#db0273" result="glowColor" />
+						<feFlood floodColor="#db0273" result="glowColor" />
 
 
 						<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
@@ -55,7 +56,7 @@ function SVG() {
 						<feGaussianBlur in="thicken" stdDeviation="25" result="blurred" />
 
 
-						<feFlood flood-color="#C0722C" result="glowColor" />
+						<feFlood floodColor="#C0722C" result="glowColor" />
 
 
 						<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />

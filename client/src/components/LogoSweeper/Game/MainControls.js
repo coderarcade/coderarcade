@@ -77,8 +77,14 @@ class MainControls extends Component {
       });
   }
 
+  abortController = new AbortController()
+
   componentDidMount() {
     this.fetchAndShuffle();
+  }
+
+  componentWillUnmount() {
+    this.abortController.abort()
   }
 
   onClick = (item) => {

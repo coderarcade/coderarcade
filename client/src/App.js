@@ -6,16 +6,17 @@ import Container from "@material-ui/core/Container"
 import './App.css';
 import Chat from "./components/Chat";
 // import Icon from '@material-ui/core/Icon';
-import SimpleBottomNavigation from './components/SimpleBottomNavigation/SimpleBottomNavigation';
-import AutoGrid from './components/AutoGrid/AutoGrid';
+// import SimpleBottomNavigation from './components/SimpleBottomNavigation/SimpleBottomNavigation';
+// import AutoGrid from './components/AutoGrid/AutoGrid';
 import 'typeface-roboto';
 import Grid from '@material-ui/core/Grid';
 import SVG from './components/Svg/Svg';
-import Amplify from 'aws-amplify';
-import awsconfig from './aws-exports';
-import { withAuthenticator } from 'aws-amplify-react'; // or 'aws-amplify-react-native';
 
-Amplify.configure(awsconfig);
+// import Amplify from 'aws-amplify';
+// import awsconfig from './aws-exports';
+// import { withAuthenticator } from 'aws-amplify-react'; // or 'aws-amplify-react-native';
+
+// Amplify.configure(awsconfig);
 
 class App extends Component {
 
@@ -46,8 +47,8 @@ class App extends Component {
                 </Grid>
               </Container>
               <Chat />
-              <AutoGrid />
-              <SimpleBottomNavigation />
+              {/* <AutoGrid /> */}
+              {/* <SimpleBottomNavigation /> */}
             </div>
           </div>
         </div>
@@ -56,4 +57,5 @@ class App extends Component {
   };
 };
 
-export default withAuthenticator(App, true);
+// export default withAuthenticator(App, true);
+export default App;
