@@ -29,7 +29,7 @@ export default function Docs() {
     const classes = useStyles();
 
     return (
-        <Container style={{ width: "100%", padding: "5%" }} fluid>
+        <Container style={{ width: "100%", padding: "5%" }} fluid="true">
             <Grid item xs>
                 <Paper className={classes.paper}><h3 style={{ textAlign: "center" }}>Read The Documention</h3><Typography variant="body2">Click on the icons to learn more in depth about each library/framework and read about what they do! Reading the documention is the best source to really know what each one is all about.
         </Typography><Grid container justify="center" alignItems="center">

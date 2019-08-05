@@ -30,7 +30,7 @@ export default function AboutUs() {
     const classes = useStyles();
 
     return (
-        <Container style={{ width: "100%", padding: "5%" }} fluid>
+        <Container style={{ width: "100%", padding: "5%" }} fluid="true">
             <Paper className={classes.paper}><h3 style={{ textAlign: "center" }}>Meet The Creators</h3><Typography variant="body2">We geared our idea towards a coding-themed arcade application for beginners/students to familiarize up-and-coming coders with today's technology. Not only for beginners but experienced programmers as well that just want to play mini games while brushing up on what they might already know.
              This app is valuable because it’s a fun way to inform people about the different languages, frameworks, and or libraries they could be using.
       </Typography>
