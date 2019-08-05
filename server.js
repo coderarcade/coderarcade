@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const dotenv = require('dotenv');
 dotenv.config();
+const passport = require("passport");
+const users = require("./routes/api/users");
 
 const mongoose = require("mongoose");
 const routes = require("./routes");
@@ -13,7 +15,7 @@ let PORT;
 if (process.env.NODE_ENV === "production") {
   PORT = 3000;
 } else {
-  PORT = 3001;
+  PORT = 5000;
 }
 
 // const PORT = process.env.PORT || 3000;
@@ -26,7 +28,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 // Add routes, both API and view
-app.use(routes);
+// app.use(routes);
 
 // DB Config
 const db = require("./config/keys").mongoURI;
@@ -42,6 +44,13 @@ mongoose
 app.get('/', function (req, res) {
   res.send('hello world')
 });
+
+// Passport middleware
+app.use(passport.initialize());
+// Passport config
+require("./config/passport")(passport);
+// Routes
+app.use("/api/users", users);
 
 // Start the API server
 server = http.listen(PORT, function () {

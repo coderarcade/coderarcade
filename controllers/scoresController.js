@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../models/User");
 
 // Defining methods for the ScoresController
 module.exports = {

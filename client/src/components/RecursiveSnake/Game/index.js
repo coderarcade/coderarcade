@@ -201,7 +201,8 @@ export default class RecursiveSnake extends React.Component {
     render() {
         // each cell should be approximately 15px wide, so calculate how many we need
         this.numCells = Math.floor(this.props.size / 15);
-        const cellSize = this.props.size / this.numCells;
+        // const cellSize = this.props.size / this.numCells;
+        const cellSize = 14;
         const cellIndexes = Array.from(Array(this.numCells).keys());
         const cells = cellIndexes.map(y => {
             return cellIndexes.map(x => {
@@ -249,7 +250,7 @@ export default class RecursiveSnake extends React.Component {
             >
                 {overlay}
                 <div
-                    className="grid"
+                    className="snake-grid"
                     style={{
                         width: this.props.size + "px",
                         height: this.props.size + "px"
