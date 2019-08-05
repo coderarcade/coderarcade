@@ -51,13 +51,13 @@ class App extends Component {
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>
-            <div className="stars" style = {{position: 'fixed'}}>
+            <div className="stars" style={{ position: 'fixed' }}>
               <div className="twinkling">
                 <div className="clouds">
                 </div>
               </div>
             </div>
-            
+
           </div>
           <SimpleBottomNavigation />
         </Router>
