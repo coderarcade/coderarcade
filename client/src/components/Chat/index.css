@@ -11,3 +11,11 @@
     font-style: italic;
     color: black;
 }
+
+#scrollingwrapper{
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100px;
+    padding: 1rem
+   }
