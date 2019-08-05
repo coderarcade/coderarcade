@@ -2,7 +2,7 @@
     background: linear-gradient(45deg, #C0722C 30%, #F41B25 90%);
     box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
     margin-top: 15%;
-    overflow: hidden;
+    display: inline-block;
 }
 
 .card-title {
@@ -10,4 +10,14 @@
     font-size: 20px;
     font-style: italic;
     color: black;
+}
+
+
+#scrollingwrapper{
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 110px;
+  padding: 1rem
+  
 }

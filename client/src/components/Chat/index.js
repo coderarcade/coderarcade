@@ -52,21 +52,26 @@ class Chat extends React.Component {
             this.setState({ message: '' });
         }
     }
-
+    
     render() {
         return (
            <div style={{ paddingTop: "10px", width: "100%" }} className="container">
-                <div style={{height: "355px", paddingBottom: "10%", marginTop: "2.5%"}} className="card">
-
-                            <div className="card-body">
-                                <div className="card-title"><h3>Global Chat</h3></div>
-                                <hr />
-                                <div className="messages">
+                <div style={{paddingBottom: "10%", marginTop: "2.5%"}} className="card">
+                <div className="card-title"><h3>Global Chat</h3></div>
+                <div id="scrollingwrapper">
+                            <div className="card-body" style={{width: "350px"}}>
+                                <div className="messages" style={{height: "100%"}}>
                                     {this.state.messages.map(message => {
                                         return (
-                                            <div key={Math.random() * 1000}>{message.author}: {message.message}</div>
+                                            <div key={Math.random() * 1000}>{message.author}: {message.message} 
+                                                                               <div ref={this.messagesEndRef} />
+
+                                            </div>
                                         )
                                     })}
+                                </div>
+                                
+                               
                                 </div>
                             </div>
                             <div className="card-footer">
