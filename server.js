@@ -5,6 +5,7 @@ dotenv.config();
 const passport = require("passport");
 const users = require("./routes/api/users");
 const path = require('path');
+const cors = require('cors');
 
 const mongoose = require("mongoose");
 const routes = require("./routes");
@@ -22,6 +23,7 @@ if (process.env.NODE_ENV === "production") {
 // const PORT = process.env.PORT || 3000;
 
 // Define middleware here
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(__dirname + '/public'));
