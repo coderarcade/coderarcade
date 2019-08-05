@@ -20,7 +20,7 @@ class Dashboard extends Component {
     render() {
         const { user } = this.props.auth;
         return (
-            <div>
+            <div  style={{textAlign: "center"}}>
                 <div className="container valign-wrapper">
                     <h4>
                         <b>Hey there,</b> {user.name.split(" ")[0]}
