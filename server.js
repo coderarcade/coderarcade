@@ -14,7 +14,7 @@ const io = require('socket.io')(http);
 
 let PORT;
 if (process.env.NODE_ENV === "production") {
-  PORT = 3000;
+  PORT = process.env.PORT;
 } else {
   PORT = 5000;
 }
