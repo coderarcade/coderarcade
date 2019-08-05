@@ -15,7 +15,7 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
-import SimpleBottomNavigation from "./components/SimpleBottomNavigation/SimpleBottomNavigation"
+import Footer from "./components/Footer/Footer"
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -59,7 +59,7 @@ class App extends Component {
             </div>
 
           </div>
-          <SimpleBottomNavigation />
+          <Footer>© 2019 The node_modules</Footer>
         </Router>
       </Provider>
     );
