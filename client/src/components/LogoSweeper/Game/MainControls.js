@@ -67,7 +67,7 @@ class MainControls extends Component {
   }
 
   fetchAndShuffle() {
-    axios.get(LOGOS_REPO)
+    axios.get(LOGOS_REPO, { crossdomain: true })
       .then((res) => {
         this.setState({
           logosList: res.data,
