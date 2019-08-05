@@ -56,7 +56,7 @@ class Chat extends React.Component {
 
     render() {
         return (
-            <div style={{ paddingTop: "10px", width: "100%"}} className="container">
+            <div style={{ paddingTop: "10px", width: "100%", marginTop: "10%"}} className="container">
                         <div style={{height: "355px", paddingBottom: "10%", marginTop: "2.5%"}} className="card">
                             <div className="card-body">
                                 <div className="card-title"><h3>Global Chat</h3></div>
