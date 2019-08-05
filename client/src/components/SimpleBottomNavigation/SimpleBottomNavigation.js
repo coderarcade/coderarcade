@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     bottom: 0,
     background: 'linear-gradient(45deg, black, #F41B25, black)',
     fontFamily: 'italic',
-    marginTop: "10%",
+    marginTop: "10%"
   },
 });
 

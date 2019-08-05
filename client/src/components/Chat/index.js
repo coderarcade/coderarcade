@@ -2,7 +2,6 @@ import React from "react";
 import io from "socket.io-client";
 import "./index.css";
 
-
 var HOST = window.location.hostname
 var PORT = 3000
 
@@ -26,7 +25,7 @@ class Chat extends React.Component {
         if (process.env.NODE_ENV === "production") {
             this.socket = io();
         } else {
-            this.socket = io('http://localhost:3001');
+            this.socket = io('http://localhost:5000');
         }
 
         // this.socket.on('error', function (err) {
@@ -56,8 +55,9 @@ class Chat extends React.Component {
 
     render() {
         return (
-            <div style={{ paddingTop: "10px", width: "100%", marginTop: "10%"}} className="container">
-                        <div style={{height: "355px", paddingBottom: "10%", marginTop: "2.5%"}} className="card">
+           <div style={{ paddingTop: "10px", width: "100%" }} className="container">
+                <div style={{height: "355px", paddingBottom: "10%", marginTop: "2.5%"}} className="card">
+
                             <div className="card-body">
                                 <div className="card-title"><h3>Global Chat</h3></div>
                                 <hr />
