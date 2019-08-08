@@ -72,6 +72,7 @@ class Register extends Component {
                   error={errors.name}
                   id="name"
                   type="text"
+                  style={{color:'white'}}
                   className={classnames("", {
                     invalid: errors.name
                   })}
@@ -86,6 +87,7 @@ class Register extends Component {
                   error={errors.email}
                   id="email"
                   type="email"
+                  style={{color:'white'}}
                   className={classnames("", {
                     invalid: errors.email
                   })}
@@ -100,6 +102,7 @@ class Register extends Component {
                   error={errors.password}
                   id="password"
                   type="password"
+                  style={{color:'white'}}
                   className={classnames("", {
                     invalid: errors.password
                   })}
@@ -114,6 +117,7 @@ class Register extends Component {
                   error={errors.password2}
                   id="password2"
                   type="password"
+                  style={{color:'white'}}
                   className={classnames("", {
                     invalid: errors.password2
                   })}
