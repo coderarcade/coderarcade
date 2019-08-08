@@ -71,6 +71,7 @@ class Login extends Component {
                   error={errors.email}
                   id="email"
                   type="email"
+                  style={{color:'white'}}
                   className={classnames("", {
                     invalid: errors.email || errors.emailnotfound
                   })}
@@ -88,6 +89,7 @@ class Login extends Component {
                   error={errors.password}
                   id="password"
                   type="password"
+                  style={{color:'white'}}
                   className={classnames("", {
                     invalid: errors.password || errors.passwordincorrect
                   })}
