@@ -35,8 +35,8 @@ export default function AboutUs() {
              This app is valuable because it’s a fun way to inform people about the different languages, frameworks, and or libraries they could be using.
       </Typography>
                 <Grid container justify="center" alignItems="center">
-                    <Avatar alt="Remy Sharp" src="https://media.licdn.com/dms/image/C4D03AQFwV-_AN6FeTQ/profile-displayphoto-shrink_800_800/0?e=1570060800&v=beta&t=Pm612m-tJaTxVzx4ZIrj2xWU6KqHCt6yOAk-VeQTPqk" className={classes.bigAvatar} />
-                    <Avatar alt="Remy Sharp" src="https://media.licdn.com/dms/image/C4E03AQE26jPYsLwnJQ/profile-displayphoto-shrink_200_200/0?e=1570060800&v=beta&t=SR0LHwa4lR4rlvWMaClrpqzvLegp3ITNsS9VDIFyWDg" className={classes.bigAvatar} />
+                    <a href="https://johnsickels.github.io/hire-john-sickels/" target="_blank" rel="noopener noreferrer"><Avatar alt="John Sickels" src="https://media.licdn.com/dms/image/C4D03AQFwV-_AN6FeTQ/profile-displayphoto-shrink_800_800/0?e=1570060800&v=beta&t=Pm612m-tJaTxVzx4ZIrj2xWU6KqHCt6yOAk-VeQTPqk" className={classes.bigAvatar} /></a>
+                    <a href="https://tabbs18.github.io/Bootstrap-Portfolio/" target="_blank" rel="noopener noreferrer"><Avatar alt="Tabitha McLaughlin" src="https://media.licdn.com/dms/image/C4E03AQE26jPYsLwnJQ/profile-displayphoto-shrink_200_200/0?e=1570060800&v=beta&t=SR0LHwa4lR4rlvWMaClrpqzvLegp3ITNsS9VDIFyWDg" className={classes.bigAvatar} /></a>
                 </Grid>
             </Paper>
         </Container>
