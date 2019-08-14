@@ -67,13 +67,13 @@ class Chat extends React.Component {
                         </div>
                     </div>
 
-                    <div className="card-footer">
+                    <form onSubmit={this.sendMessage} className="card-footer">
                         <input type="text" placeholder="Username" value={this.state.username} onChange={ev => this.setState({ username: ev.target.value })} className="form-control" />
                         <br />
                         <input type="text" placeholder="Message" value={this.state.message} onChange={ev => this.setState({ message: ev.target.value })} className="form-control" />
                         <br />
-                        <button style={{ backgroundColor: "blue" }} onClick={this.sendMessage} className="btn btn-primary form-control">Send</button>
-                    </div>
+                        <button type="submit" style={{ backgroundColor: "blue" }} className="btn btn-primary form-control">Send</button>
+                    </form>
                 </div>
             </div>
         );
