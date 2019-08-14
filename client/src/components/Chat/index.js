@@ -25,11 +25,15 @@ class Chat extends React.Component {
         }
         this.sendMessage = ev => {
             ev.preventDefault();
-            this.socket.emit('SEND_MESSAGE', {
-                author: this.state.username,
-                message: this.state.message
-            })
-            this.setState({ message: '' });
+            if (!this.state.message.length) {
+                return
+            } else {
+                this.socket.emit('SEND_MESSAGE', {
+                    author: this.state.username,
+                    message: this.state.message
+                })
+                this.setState({ message: '' });
+            }
         }
     }
     scrollToBottom = () => {
