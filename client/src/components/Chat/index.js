@@ -33,7 +33,7 @@ class Chat extends React.Component {
         }
     }
     scrollToBottom = () => {
-        this.messagesEnd.scrollIntoView({ behavior: "smooth" });
+        this.messagesEnd.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
 
     componentDidMount() {
@@ -62,6 +62,7 @@ class Chat extends React.Component {
                             </div>
                         </div>
                     </div>
+
                     <div className="card-footer">
                         <input type="text" placeholder="Username" value={this.state.username} onChange={ev => this.setState({ username: ev.target.value })} className="form-control" />
                         <br />
