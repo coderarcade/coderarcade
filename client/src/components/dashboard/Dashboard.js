@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import TicTacToeDialog from "../TicTacToe/TicTacToeDialog"
-import LogoSweeperDialog from "../LogoSweeper/LogoSweeperDialog"
-import RecursiveSnakeDialog from "../RecursiveSnake/RecursiveSnakeDialog"
-import Container from "@material-ui/core/Container"
+import TicTacToeDialog from "../TicTacToe/TicTacToeDialog";
+import LogoSweeperDialog from "../LogoSweeper/LogoSweeperDialog";
+import RecursiveSnakeDialog from "../RecursiveSnake/RecursiveSnakeDialog";
+import TetrisDialog from "../Tetris/TetrisDialog";
+import Container from "@material-ui/core/Container";
 import Chat from "../Chat";
 import Docs from "../Docs";
 import AboutUs from "../AboutUs";
@@ -53,6 +54,9 @@ class Dashboard extends Component {
                         </Grid>
                         <Grid item xs>
                             <RecursiveSnakeDialog />
+                        </Grid>
+                        <Grid item xs>
+                            <TetrisDialog />
                         </Grid>
                     </Grid>
                 </Container>
