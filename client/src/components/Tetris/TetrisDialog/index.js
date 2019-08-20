@@ -34,7 +34,9 @@ export default function TetrisDialog() {
         aria-labelledby="responsive-dialog-title"
       >
 
-        <DialogContent>
+        <DialogContent
+          style={{ padding: 0 }}
+        >
           <Tetris />
         </DialogContent>
 
