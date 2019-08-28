@@ -12,3 +12,10 @@ export const sendScore = (userScore) => dispatch => {
     //   })
     );
 };
+
+export const readScores = (userScore) => dispatch => {
+    axios
+        .get("api/users/scoreboard", userScore)
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
+};

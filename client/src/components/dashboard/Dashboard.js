@@ -7,6 +7,7 @@ import Container from "@material-ui/core/Container";
 import Chat from "../Chat";
 import Docs from "../Docs";
 import AboutUs from "../AboutUs";
+import Scoreboard from "../Scoreboard";
 import Grid from '@material-ui/core/Grid';
 
 import PropTypes from "prop-types";
@@ -71,6 +72,9 @@ class Dashboard extends Component {
                         </Grid>
                         <Grid item lg>
                             <Docs />
+                        </Grid>
+                        <Grid item lg>
+                            <Scoreboard />
                         </Grid>
                     </Grid>
                 </Container>
