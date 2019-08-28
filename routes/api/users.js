@@ -97,7 +97,8 @@ router.post("/login", (req, res) => {
 
 router.post("/scoreboard", (req, res) => {
     const newScore = new Score({
-      snakeScore: req.body.snakeScore
+      snakeScore: req.body.snakeScore,
+      user: req.body.user
     });
     Score
       .create(newScore)

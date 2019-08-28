@@ -207,9 +207,12 @@ class RecursiveSnake extends Component {
     sendHighScore = e => {
         e.preventDefault();
         // console.log(this.state.snake.length);
-        
+
+        const { user } = this.props.auth;
+
         const newScore = {
-            snakeScore: this.state.snake.length
+            snakeScore: this.state.snake.length,
+            user: user.name.split(" ")[0]
         };
 
         console.log(newScore);
@@ -218,6 +221,7 @@ class RecursiveSnake extends Component {
     }
 
     render() {
+        
         // each cell should be approximately 15px wide, so calculate how many we need
         this.numCells = Math.floor(this.props.size / 15);
         // const cellSize = this.props.size / this.numCells;
@@ -289,6 +293,7 @@ RecursiveSnake.propTypes = {
 }
 
 const mapStateToProps = state => ({
+    auth: state.auth,
     errors: state.errors
 });
 

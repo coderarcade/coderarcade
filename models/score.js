@@ -6,6 +6,11 @@ const ScoreSchema = new Schema({
     type: Number, 
     required: false,
     default: 0
+  },
+  user: {
+    type: String,
+    required: false,
+    default: "ABC"
   }
 });
 
