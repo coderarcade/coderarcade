@@ -97,13 +97,20 @@ router.post("/login", (req, res) => {
 
 router.post("/scoreboard", (req, res) => {
     const newScore = new Score({
-      snakeScore: req.body.snakeScore,
-      user: req.body.user
+        snakeScore: req.body.snakeScore,
+        user: req.body.user
     });
     Score
-      .create(newScore)
-      .then(score => res.json(score))
-      .catch(err => console.log(err));
-  });
+        .create(newScore)
+        .then(score => res.json(score))
+        .catch(err => console.log(err));
+});
+
+router.get("/scoreboard", (req, res) => {
+    Score
+        .find()
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
+})
 
 module.exports = router;
