@@ -1,10 +1,12 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-
-const scoreSchema = new Schema({
-  id: { type: String, required: true }
+// Create Schema
+const ScoreSchema = new Schema({
+  snakeScore: { 
+    type: Number, 
+    required: false,
+    default: 0
+  }
 });
 
-const Score = mongoose.model("Score", scoreSchema);
-
-module.exports = Score;
+module.exports = Score = mongoose.model("scores", ScoreSchema);

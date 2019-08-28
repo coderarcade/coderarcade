@@ -1,4 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { withRouter } from "react-router-dom";
+
+import PropTypes from "prop-types";
+import { sendScore } from "../../../actions/scoreActions";
+import { connect } from 'react-redux';
+
 import './index.css';
 
 // utility functions
@@ -32,9 +38,9 @@ function GridCell(props) {
 }
 
 // the main view
-export default class RecursiveSnake extends React.Component {
-    constructor(props) {
-        super(props);
+class RecursiveSnake extends Component {
+    constructor() {
+        super();
         this.state = {
             snake: [],
             food: [],
@@ -198,6 +204,19 @@ export default class RecursiveSnake extends React.Component {
         this.removeTimers();
     }
 
+    sendHighScore = e => {
+        e.preventDefault();
+        // console.log(this.state.snake.length);
+        
+        const newScore = {
+            snakeScore: this.state.snake.length
+        };
+
+        console.log(newScore);
+
+        this.props.sendScore(newScore);
+    }
+
     render() {
         // each cell should be approximately 15px wide, so calculate how many we need
         this.numCells = Math.floor(this.props.size / 15);
@@ -234,6 +253,7 @@ export default class RecursiveSnake extends React.Component {
                     <div className="mb-1"><b>GAME OVER!</b></div>
                     <div className="mb-1">Your score: {this.state.snake.length} </div>
                     <button onClick={this.startGame}>Start a new game</button>
+                    <button onClick={this.sendHighScore}>Post to scoreboard</button>
                 </div>
             );
         }
@@ -262,5 +282,19 @@ export default class RecursiveSnake extends React.Component {
         );
     }
 }
+
+RecursiveSnake.propTypes = {
+    sendScore: PropTypes.func.isRequired,
+    errors: PropTypes.object.isRequired
+}
+
+const mapStateToProps = state => ({
+    errors: state.errors
+});
+
+export default connect(
+    mapStateToProps,
+    { sendScore }
+)(withRouter(RecursiveSnake))
 
 // ReactDOM.render(<App size={350} />, document.getElementById("root"));

@@ -8,6 +8,8 @@ const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
 // Load User model
 const User = require("../../models/User");
+const Score = require("../../models/Score");
+
 
 // @route POST api/users/register
 // @desc Register user
@@ -92,5 +94,15 @@ router.post("/login", (req, res) => {
         });
     });
 });
+
+router.post("/scoreboard", (req, res) => {
+    const newScore = new Score({
+      snakeScore: req.body.snakeScore
+    });
+    Score
+      .create(newScore)
+      .then(score => res.json(score))
+      .catch(err => console.log(err));
+  });
 
 module.exports = router;
