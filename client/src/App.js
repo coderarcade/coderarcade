@@ -59,7 +59,7 @@ class App extends Component {
             </div>
 
           </div>
-          <Footer>© 2019 The node_modules</Footer>
+          <Footer>© 2019 coderarcade.com</Footer>
         </Router>
       </Provider>
     );

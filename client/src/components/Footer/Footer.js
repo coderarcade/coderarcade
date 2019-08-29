@@ -4,7 +4,7 @@ var style = {
     background: 'linear-gradient(45deg, black, #F41B25, black)',
     borderTop: "1px solid #E7E7E7",
     textAlign: "center",
-    padding: "20px",
+    padding: "20 0 10 0",
     position: "fixed",
     left: "0",
     bottom: "0",
@@ -16,7 +16,7 @@ var style = {
 
 var phantom = {
     display: 'block',
-    padding: '20px',
+    padding: '20 0 20 0',
     height: '60px',
     width: '100%',
 }
