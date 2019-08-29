@@ -62,10 +62,16 @@ class Scoreboard extends Component {
 
     }
 
-    componentWillMount() {
+    readScores = e => {
+        e.preventDefault();
         // console.log(this.props.readScores);
         // createData();
+        console.log("Clicked");
         this.props.readScores()
+        
+        // this.props.readScores()
+        // .then(res => console.log(res))
+        // .catch(err => console.log(err))
 
     }
 
@@ -73,6 +79,7 @@ class Scoreboard extends Component {
         return (
             <Container>
                 High Scores Here!
+                <button onClick={this.readScores}>Gimme High Scores</button>
             </Container>
             // <Container style={{ width: "100%", padding: "5%" }} fluid="true">
             //     <Paper className={classes.paper}><h3 style={{ textAlign: "center" }}>High Scores</h3>

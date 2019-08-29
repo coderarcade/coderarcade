@@ -16,6 +16,6 @@ export const sendScore = (userScore) => dispatch => {
 export const readScores = () => dispatch => {
     axios
         .get("/api/users/scoreboard")
-        .then(res => console.log(res))
+        .then((res) => console.log("Aciton says: " + res))
         .catch(err => console.log(err))
 }
