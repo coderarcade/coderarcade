@@ -301,5 +301,3 @@ export default connect(
     mapStateToProps,
     { sendScore }
 )(withRouter(RecursiveSnake))
-
-// ReactDOM.render(<App size={350} />, document.getElementById("root"));

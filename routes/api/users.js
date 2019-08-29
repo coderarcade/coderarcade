@@ -107,9 +107,15 @@ router.post("/scoreboard", (req, res) => {
 });
 
 router.get("/scoreboard", (req, res) => {
+    let highScores =[]
     Score
         .find()
-        .then(res => console.log(res))
+        .then(res => {
+            highScores.push(res)
+            console.log(highScores);
+            
+            return highScores
+        })
         .catch(err => console.log(err))
 })
 
