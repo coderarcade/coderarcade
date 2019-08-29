@@ -13,9 +13,9 @@ export const sendScore = (userScore) => dispatch => {
     );
 };
 
-export const readScores = (userScore) => dispatch => {
+export const readScores = () => dispatch => {
     axios
-        .get("api/users/scoreboard", userScore)
+        .get("/api/users/scoreboard")
         .then(res => console.log(res))
         .catch(err => console.log(err))
-};
+}
