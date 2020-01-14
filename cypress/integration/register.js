@@ -11,7 +11,7 @@ describe('The Home Page', function () {
             .should('have.value', 'Leeroy Jenkins')
 
         cy.get('#email')
-            .type('leeroyjenkins.com')
+            .type('leeroy@jenkins.com')
             .should('have.value', 'leeroy@jenkins.com')
 
         cy.get('#password')
