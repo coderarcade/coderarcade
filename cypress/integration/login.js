@@ -14,7 +14,7 @@ describe('The Home Page', function() {
             .type('root123')
             .should('have.value', 'root123')
 
-        cy.contains('Login').click()
+        cy.get('.btn[type="submit"]').click()
 
         cy.url().should('include', '/dashboard')
     })
