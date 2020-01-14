@@ -1,6 +1,6 @@
 # Coder Arcade
 
-!(build)[https://travis-ci.com/coderarcade/coderarcade.svg?branch=master]
+![build](https://travis-ci.com/coderarcade/coderarcade.svg?branch=master)
 
 ### Overview
 
