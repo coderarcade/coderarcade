@@ -1,5 +1,7 @@
 # Coder Arcade
 
+!(build)[https://travis-ci.com/coderarcade/coderarcade.svg?branch=master]
+
 ### Overview
 
 A coding-themed arcade to familiarize up-and-coming coders with today's terms and technologies. A Single Page Application with a roadmap of games to play during your journey towards becoming a coder.
