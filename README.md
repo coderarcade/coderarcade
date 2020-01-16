@@ -21,6 +21,7 @@ MERN Stack
 * Material-UI
 * Socket.IO
 * AWS EC2
+* TravisCI
 
 ## Tic Tac 1/0
 
