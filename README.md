@@ -22,6 +22,7 @@ MERN Stack
 * Socket.IO
 * AWS EC2
 * TravisCI
+* Workshop Demo
 
 ## Tic Tac 1/0
 
