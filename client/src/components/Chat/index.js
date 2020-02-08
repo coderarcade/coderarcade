@@ -19,9 +19,9 @@ class Chat extends React.Component {
             addMessage(data);
         });
         const addMessage = data => {
-            console.log(data);
+            // console.log(data);
             this.setState({ messages: [...this.state.messages, data] });
-            console.log(this.state.messages);
+            // console.log(this.state.messages);
         }
         this.sendMessage = ev => {
             ev.preventDefault();
